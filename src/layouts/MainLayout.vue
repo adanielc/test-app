@@ -11,15 +11,15 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title> Quasar App </q-toolbar-title>
+        <q-toolbar-title> Oposicion UCI Maury </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>Version 0.1</div>
       </q-toolbar>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label header> Essential Links </q-item-label>
+        <q-item-label header> Options </q-item-label>
 
         <EssentialLink
           v-for="link in linksList"
@@ -41,8 +41,8 @@ import EssentialLink from "components/EssentialLink.vue";
 
 const linksList = [
   {
-    title: "Test",
-    caption: "Test page",
+    title: "Test 1",
+    caption: "Test de ",
     icon: "school",
     link: "/test",
   },
